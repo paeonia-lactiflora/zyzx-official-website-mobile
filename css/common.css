@@ -6,7 +6,7 @@ html {
   --bs-shadow-active: 0 0.1067rem 0.2133rem rgba(var(--bs-body-color-rgb), 0.15);
   --xiaomi-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
   --xiaomi-shadow-active: 0 0.2667rem 1.0667rem rgba(0, 0, 0, 0.2);
-  --transition-duration: 0.2s;
+  --transition-duration: 0.15s;
   --bs-nice-shadow: 0 0 0 0.0208rem rgba(var(--main-color-rgb), 0.25);
   overflow-x: hidden !important;
 }
@@ -208,14 +208,17 @@ html body .iconfont:hover {
   bottom: -0.11rem;
 }
 .recommend-doctor {
+  margin: 0;
+  height: 8.4rem;
   background-color: #fff;
   border-radius: 0.2rem;
+  overflow-y: auto;
 }
 .recommend-doctor .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.2rem;
+  padding: 0.2rem;
 }
 .recommend-doctor .header p {
   position: relative;
@@ -225,10 +228,75 @@ html body .iconfont:hover {
   margin-left: 0.1rem;
   font-size: 0.98em;
 }
+.recommend-doctor .header a.more {
+  display: flex;
+  align-items: center;
+  gap: 0.05rem;
+}
+.recommend-doctor .header a.more:hover {
+  color: var(--main-color);
+}
+.recommend-doctor .header a.more:hover i {
+  transform: translateX(0.08rem);
+}
+.recommend-doctor .body {
+  margin-top: 0.3rem;
+  padding: 0 0.3rem;
+}
+.recommend-doctor .body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.recommend-doctor .body ul li a {
+  display: flex;
+  gap: 0.2rem;
+}
+.recommend-doctor .body ul li a .left img {
+  width: 1.3rem;
+}
+.recommend-doctor .body ul li a .right {
+  padding-top: 0.15rem;
+}
+.recommend-doctor .body ul li a .right .card-title,
+.recommend-doctor .body ul li a .right .secondary-title {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.recommend-doctor .body ul li a .right .card-title .name {
+  font-size: 0.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.recommend-doctor .body ul li a .right .secondary-title {
+  margin: 0.05rem 0;
+}
+.recommend-doctor .body ul li a .right .secondary-title .score {
+  height: 0.3rem;
+}
+.recommend-doctor .body ul li a .right .secondary-title .visit-time {
+  color: gray;
+}
+.recommend-doctor .body ul li a .right .secondary-title .visit-time span {
+  margin-right: 0.015rem;
+  color: #007AFF;
+}
+.recommend-doctor .body ul li a .right .speciality {
+  color: gray;
+  font-size: 0.35rem;
+}
+.recommend-doctor .body ul li a .right .speciality::before {
+  margin-right: 0.2rem;
+  content: '擅长:';
+  font-size: 1.05em;
+  color: #000;
+}
 .copyright {
+  margin-bottom: 1.55rem;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 0.35rem;
+  font-size: 0.4rem;
 }
 .copyright a {
   color: inherit;
@@ -269,6 +337,6 @@ html body .iconfont:hover {
 .tabBar li a.active {
   color: var(--main-color);
 }
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 0;
 }

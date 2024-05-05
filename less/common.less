@@ -11,7 +11,7 @@ html {
   --xiaomi-shadow-active: 0 .2667rem 1.0667rem rgba(0, 0, 0, .2);
 
 
-  --transition-duration: .2s;
+  --transition-duration: .15s;
   --bs-nice-shadow: 0 0 0 .0208rem rgba(var(--main-color-rgb), .25);
 
   overflow-x: hidden !important;
@@ -314,14 +314,20 @@ html {
 }
 
 .recommend-doctor {
+  margin: 0;
+  height: 8.4rem;
+
   background-color: #fff;
   border-radius: 0.2rem;
+
+  overflow-y: auto;
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 .2rem;
+
+    padding: .2rem;
 
     p {
       position: relative;
@@ -333,13 +339,105 @@ html {
         font-size: 0.98em;
       }
     }
+
+    a.more {
+      display: flex;
+      align-items: center;
+      gap: 0.05rem;
+
+      &:hover {
+        color: var(--main-color);
+
+        i {
+          transform: translateX(0.08rem);
+        }
+      }
+    }
+  }
+
+  .body {
+    margin-top: 0.3rem;
+    padding: 0 .3rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+
+      li {
+        a {
+          display: flex;
+          gap: 0.2rem;
+
+          .left {
+
+            img {
+              width: 1.3rem;
+            }
+          }
+
+          .right {
+            padding-top: 0.15rem;
+
+            .card-title,
+            .secondary-title {
+              display: flex;
+              align-items: center;
+              gap: 0.35rem;
+            }
+
+            .card-title {
+              .name {
+                font-size: 0.4rem;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+              }
+            }
+
+            .secondary-title {
+              margin: 0.05rem 0;
+
+              .score {
+                height: 0.3rem;
+                // background-color: pink;
+              }
+
+              .visit-time {
+                color: gray;
+
+                span {
+                  margin-right: 0.015rem;
+                  color: #007AFF;
+                }
+              }
+            }
+
+            .speciality {
+              color: gray;
+              font-size: 0.35rem;
+
+              &::before {
+                margin-right: 0.2rem;
+
+                content: '擅长:';
+
+                font-size: 1.05em;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 .copyright {
+  margin-bottom: 1.55rem;
+
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size: .35rem;
+  font-size: .4rem;
 
   a {
     color: inherit;
@@ -397,6 +495,6 @@ html {
   }
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 0;
 }
