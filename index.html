@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/index.css">
 
   <link rel="shortcut icon" href="https://p1.music.126.net/1lqMPskW7B75S1Km452I_Q==/18762066417668140.jpg?param=130y130"
     type="image/x-icon">
@@ -44,6 +45,136 @@
 </head>
 
 <body>
+  <!-- 标题 -->
+  <div class="title">
+    <div class="pharmacy">
+      <i class="iconfont icon-pharmacy left"></i>
+      <div class="location">云浮
+        <i class="iconfont icon-arrow-down-fill"></i>
+      </div>
+    </div>
+    <img src="/img/logo_white.png" alt="" class="brand">
+    <!-- 中药商城 -->
+  </div>
+
+
+  <!-- 搜索框 -->
+  <div class="searchBox">
+    <input type="text" placeholder="搜索医院或药品" class="searchInput left" id="searchInput">
+    <label for="searchInput" class="searchBtn"><i class="iconfont icon-search"></i></label>
+    <i class="iconfont icon-msg right"></i>
+  </div>
+
+
+  <!-- 智能问诊, 健康查询等 -->
+  <div class="tools">
+    <ul class="row">
+      <li class="tool-item znwz">
+        <a href="#" class="tool-link">
+          <img src="/img/tool/znwz.png" alt="">
+          <p>智能问诊</p>
+        </a>
+      </li>
+      <li class="tool-item jkzx">
+        <a href="#" class="tool-link">
+          <img src="/img/tool/jkzx.png" alt="">
+          <p>健康咨询</p>
+        </a>
+      </li>
+      <li class="tool-item znpf">
+        <a href="#" class="tool-link">
+          <img src="/img/tool/znpf.png" alt="">
+          <p>智能配方</p>
+        </a>
+      </li>
+      <li class="tool-item znsb">
+        <a href="#" class="tool-link">
+          <img src="/img/tool/znsb.png" alt="">
+          <p>智能识别</p>
+        </a>
+      </li>
+    </ul>
+    <ul class="row">
+      <li class="tool-item bad yfjc">
+        <a href="#" class="tool-link">
+          <img src="/img/tool/yfjc.png" alt="" class="">
+          <p>药方检测</p>
+        </a>
+      </li>
+      <li class="tool-item bad jkzc">
+        <a href="#" class="tool-link">
+          <img src="/img/tool/jkzc.png" alt="" class="">
+          <p>健康自测</p>
+        </a>
+      </li>
+      <li class="tool-item bad xljk">
+        <a href="#" class="tool-link">
+          <img src="/img/tool/xljk.png" alt="" class="">
+          <p>健康自测</p>
+        </a>
+      </li>
+      <li class="tool-item bad smzs">
+        <a href="#" class="tool-link">
+          <img src="/img/tool/smzs.png" alt="" class="">
+          <p>睡眠助手</p>
+        </a>
+      </li>
+      <li class="tool-item bad jbdt">
+        <a href="#" class="tool-link">
+          <img src="/img/tool/jbdt.png" alt="" class="">
+          <p>疾病动态</p>
+        </a>
+      </li>
+    </ul>
+    <div class="slider">
+      <div class="left"></div>
+    </div>
+  </div>
+
+
+  <!-- 预约挂号, 线下预约等 -->
+  <div class="appointment">
+    <ul class="row">
+      <li>
+        <a href="#">
+          <p class="title">预约挂号</p>
+          <p class="description">节约时间</p>
+          <img src="/img/appointment/yygh-bg.png" alt="" id="yygh-bg" class="bg">
+          <img src="/img/appointment/yygh-icon.png" alt="" id="yygh-icon" class="icon">
+          <img src="img/appointment//yygh-btn.png" alt="" class="btn">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <p class="title">线下预约</p>
+          <p class="description">精准治疗</p>
+          <img src="/img/appointment/xxyy-bg.png" alt="" id="xxyy-bg" class="bg">
+          <img src="/img/appointment/xxyy-icon.png" alt="" id="xxyy-icon" class="icon">
+        </a>
+      </li>
+      <img src="img/appointment//yygh-btn.png" alt="" class="btn">
+      <li>
+        <a href="#">
+          <p class="title">专家讲解</p>
+          <p class="description">知识拓宽</p>
+          <img src="/img/appointment/zjjj-bg.png" alt="" class="bg">
+          <img src="/img/appointment/zjjj-icon.png" alt="" id="zjjj-icon" class="icon">
+          <img src="img/appointment//yygh-btn.png" alt="" class="btn">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 推荐医生 -->
+  <div class="recommend-doctor">
+    <div class="header">
+      <p>推荐医生<i class="iconfont icon-doctor"></i>
+      </p>
+      <a href="#" class="more">更多 <i class="iconfont icon-arrow-right"></i></a>
+    </div>
+  </div>
+
+
   <!-- 版权 -->
   <div class="copyright">
     copyright © M&T developed by
@@ -54,7 +185,38 @@
 
 
   <!-- tabBar -->
-
+  <ul class="tabBar">
+    <li>
+      <a href="/index.html" class="active">
+        <i class="iconfont icon-home"></i>
+        <p>首页</p>
+      </a>
+    </li>
+    <li>
+      <a href="/index.html" class="">
+        <i class="iconfont icon-home"></i>
+        <p>首页</p>
+      </a>
+    </li>
+    <li>
+      <a href="/index.html" class="">
+        <i class="iconfont icon-home"></i>
+        <p>首页</p>
+      </a>
+    </li>
+    <li>
+      <a href="/index.html" class="">
+        <i class="iconfont icon-home"></i>
+        <p>首页</p>
+      </a>
+    </li>
+    <li>
+      <a href="/index.html" class="">
+        <i class="iconfont icon-home"></i>
+        <p>首页</p>
+      </a>
+    </li>
+  </ul>
 
 
   <script src="/js/flexible.js"></script>
