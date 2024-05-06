@@ -19,11 +19,13 @@ html body {
 html body > div {
   margin-bottom: 0.3rem;
 }
+html body > div:last-of-type {
+  margin-bottom: 1.9rem;
+}
 html body .iconfont:hover {
   color: var(--main-color);
 }
 * {
-  transition: all var(--transition-duration);
   caret-color: var(--main-color) !important;
 }
 * ::selection {
@@ -209,10 +211,8 @@ html body .iconfont:hover {
 }
 .recommend-doctor {
   margin: 0;
-  height: 8.4rem;
   background-color: #fff;
   border-radius: 0.2rem;
-  overflow-y: auto;
 }
 .recommend-doctor .header {
   display: flex;
@@ -240,8 +240,9 @@ html body .iconfont:hover {
   transform: translateX(0.08rem);
 }
 .recommend-doctor .body {
-  margin-top: 0.3rem;
   padding: 0 0.3rem;
+  height: 8.4rem;
+  overflow-y: auto;
 }
 .recommend-doctor .body ul {
   display: flex;
@@ -331,8 +332,8 @@ html body .iconfont:hover {
   color: #d4d8e6;
 }
 .tabBar li a i {
-  margin-bottom: -0.25rem;
-  font-size: 0.8rem;
+  margin-bottom: -0.1rem;
+  font-size: 0.65rem;
 }
 .tabBar li a.active {
   color: var(--main-color);

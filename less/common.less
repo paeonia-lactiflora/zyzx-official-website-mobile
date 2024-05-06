@@ -26,6 +26,10 @@ html {
 
     &>div {
       margin-bottom: .3rem;
+
+      &:last-of-type {
+        margin-bottom: 1.9rem;
+      }
     }
 
     .iconfont {
@@ -40,7 +44,7 @@ html {
 }
 
 * {
-  transition: all var(--transition-duration);
+  // transition: all var(--transition-duration);
 
   ::selection {
     background-color: var(--main-color);
@@ -315,12 +319,9 @@ html {
 
 .recommend-doctor {
   margin: 0;
-  height: 8.4rem;
 
   background-color: #fff;
   border-radius: 0.2rem;
-
-  overflow-y: auto;
 
   .header {
     display: flex;
@@ -356,8 +357,11 @@ html {
   }
 
   .body {
-    margin-top: 0.3rem;
+    // margin-top: 0.3rem;
     padding: 0 .3rem;
+    height: 8.4rem;
+
+    overflow-y: auto;
 
     ul {
       display: flex;
@@ -484,8 +488,8 @@ html {
       color: #d4d8e6;
 
       i {
-        margin-bottom: -0.25rem;
-        font-size: .8rem;
+        margin-bottom: -0.1rem;
+        font-size: .65rem;
       }
 
       &.active {
