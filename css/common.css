@@ -29,6 +29,7 @@ html body .iconfont:hover {
   color: var(--main-color);
 }
 * {
+  transition: all var(--transition-duration);
   caret-color: var(--main-color) !important;
 }
 * ::selection {
