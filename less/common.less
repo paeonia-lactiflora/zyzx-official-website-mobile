@@ -47,6 +47,7 @@ html {
   }
 }
 
+
 * {
   transition: all var(--transition-duration);
 
@@ -59,6 +60,7 @@ html {
 
   // border-color: var(--bs-border-color);
 }
+
 
 .title {
   margin-top: 1.2rem;
@@ -75,6 +77,7 @@ html {
     width: 2.5rem;
   }
 }
+
 
 .searchBox {
   position: relative;
@@ -127,6 +130,7 @@ html {
     }
   }
 }
+
 
 .tools {
   position: relative;
@@ -195,6 +199,7 @@ html {
     }
   }
 }
+
 
 .appointment {
   padding: 0.11rem;
@@ -321,6 +326,7 @@ html {
   }
 }
 
+
 .recommend-doctor,
 .question,
 .apparel {
@@ -370,6 +376,7 @@ html {
     overflow-y: auto;
   }
 }
+
 
 .recommend-doctor {
   .body {
@@ -448,6 +455,7 @@ html {
   }
 }
 
+
 .apparel {
   position: relative;
 
@@ -464,7 +472,10 @@ html {
   }
 }
 
+
 .question {
+  margin-bottom: 1.2rem;
+  
   .classification {
     display: flex;
     justify-content: space-between;
@@ -544,6 +555,7 @@ html {
   }
 }
 
+
 .copyright {
   margin-bottom: 1.55rem;
 
@@ -569,6 +581,7 @@ html {
     }
   }
 }
+
 
 .tabBar {
   position: fixed;
@@ -606,6 +619,59 @@ html {
     }
   }
 }
+
+
+.loader-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+
+  display: flex;
+
+  margin: 0 !important;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  transition: none;
+
+  .loader {
+    position: relative;
+
+    margin: auto;
+
+    width: 3.2rem;
+    height: .5867rem;
+
+    border: 2px solid;
+    border-radius: 20px;
+
+    color: var(--main-color);
+
+    transition: none;
+
+    &::before {
+      position: absolute;
+      inset: 0 100% 0 0;
+
+      content: "";
+
+      margin: 2px;
+      border-radius: inherit;
+      background: currentColor;
+
+      animation: l6 1s infinite;
+    }
+
+    @keyframes l6 {
+      100% {
+        inset: 0
+      }
+    }
+  }
+}
+
 
 body::-webkit-scrollbar {
   width: 0;
