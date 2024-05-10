@@ -232,7 +232,7 @@ html body .iconfont:hover {
 .question .header p,
 .apparel .header p {
   position: relative;
-  background: url(/img/recommend-doctor/header-bg.png) no-repeat;
+  background: url(/img/index/recommend-doctor/header-bg.png) no-repeat;
   background-position: left 61%;
   background-size: contain;
   font-size: 0.4rem;
