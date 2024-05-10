@@ -17,7 +17,7 @@ html body {
   padding: 0 0.2rem;
   font-size: 0.35rem;
   background: url(/img/bg.png) top no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 html body > div {
   margin-bottom: 0.3rem;
@@ -214,50 +214,56 @@ html body .iconfont:hover {
   bottom: -0.11rem;
 }
 .recommend-doctor,
-.question {
+.question,
+.apparel {
   background-color: #fff;
   border-radius: 0.2rem;
   padding: 0.25rem;
 }
 .recommend-doctor .header,
-.question .header {
+.question .header,
+.apparel .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.2rem;
 }
 .recommend-doctor .header p,
-.question .header p {
+.question .header p,
+.apparel .header p {
   position: relative;
   background: url(/img/recommend-doctor/header-bg.png) no-repeat;
-  background-position: left 62%;
+  background-position: left 61%;
   background-size: contain;
   font-size: 0.4rem;
-}
-.recommend-doctor .header p i,
-.question .header p i {
-  margin-left: 0.2rem;
-  font-size: 0.98em;
+  letter-spacing: 0.1em;
 }
 .recommend-doctor .header a.more,
-.question .header a.more {
+.question .header a.more,
+.apparel .header a.more {
   display: flex;
   align-items: center;
   gap: 0.05rem;
 }
 .recommend-doctor .header a.more:hover,
-.question .header a.more:hover {
+.question .header a.more:hover,
+.apparel .header a.more:hover {
   color: var(--main-color);
 }
 .recommend-doctor .header a.more:hover i,
-.question .header a.more:hover i {
+.question .header a.more:hover i,
+.apparel .header a.more:hover i {
   transform: translateX(0.08rem);
 }
 .recommend-doctor .body,
-.question .body {
+.question .body,
+.apparel .body {
   padding: 0 0.2rem;
-  height: 8.4rem;
+  height: 9.5rem;
   overflow-y: auto;
+}
+.recommend-doctor .body {
+  height: 6rem;
 }
 .recommend-doctor .body ul {
   display: flex;
@@ -308,6 +314,18 @@ html body .iconfont:hover {
   font-size: 1.05em;
   color: #000;
 }
+.apparel {
+  position: relative;
+  overflow: hidden;
+}
+.apparel a.apparel-more {
+  position: absolute;
+  left: 0.4rem;
+  bottom: 0.2rem;
+}
+.apparel img {
+  height: 2.9065rem;
+}
 .question .classification {
   display: flex;
   justify-content: space-between;
@@ -329,10 +347,11 @@ html body .iconfont:hover {
   margin-top: 0.5rem;
 }
 .question .body .question-list .question-item {
-  padding: 0.2rem;
+  padding: 0.3rem 0.2rem;
 }
 .question .body .question-list .question-item .question-title {
   font-size: 0.4rem;
+  font-weight: bold;
   letter-spacing: 0.1em;
 }
 .question .body .question-list .question-item .question-text {
@@ -344,14 +363,24 @@ html body .iconfont:hover {
   justify-content: space-between;
   align-items: center;
 }
-.question .body .question-list .question-item .ft a {
+.question .body .question-list .question-item .ft .left {
+  color: #5b84f0;
+}
+.question .body .question-list .question-item .ft .left img,
+.question .body .question-list .question-item .ft .left span {
+  margin-left: -0.35rem;
+}
+.question .body .question-list .question-item .ft .left span:first-of-type {
+  margin-right: 0.3rem;
+}
+.question .body .question-list .question-item .ft a.right {
   background: var(--btn-bg);
   padding: 0.11rem 0.3rem;
   border-radius: 999rem;
   box-shadow: var(--btn-shadow);
   color: #fff;
 }
-.question .body .question-list .question-item .ft a:active {
+.question .body .question-list .question-item .ft a.right:active {
   box-shadow: var(--btn-shadow-active);
   transform: translateY(0.08rem);
 }

@@ -26,7 +26,7 @@ html {
 
     font-size: .35rem;
     background: url(/img/bg.png) top no-repeat;
-    background-size: cover;
+    background-size: 100%;
 
     &>div {
       margin-bottom: .3rem;
@@ -322,7 +322,8 @@ html {
 }
 
 .recommend-doctor,
-.question {
+.question,
+.apparel {
   background-color: #fff;
   border-radius: 0.2rem;
 
@@ -340,15 +341,11 @@ html {
       position: relative;
 
       background: url(/img/recommend-doctor/header-bg.png) no-repeat;
-      background-position: left 62%;
+      background-position: left 61%;
       background-size: contain;
 
       font-size: .4rem;
-
-      i {
-        margin-left: 0.2rem;
-        font-size: 0.98em;
-      }
+      letter-spacing: .1em;
     }
 
     a.more {
@@ -368,7 +365,7 @@ html {
 
   .body {
     padding: 0 .2rem;
-    height: 8.4rem;
+    height: 9.5rem;
 
     overflow-y: auto;
   }
@@ -376,6 +373,7 @@ html {
 
 .recommend-doctor {
   .body {
+    height: 6rem;
 
     ul {
       display: flex;
@@ -450,6 +448,22 @@ html {
   }
 }
 
+.apparel {
+  position: relative;
+
+  overflow: hidden;
+
+  a.apparel-more {
+    position: absolute;
+    left: 0.4rem;
+    bottom: 0.2rem;
+  }
+
+  img {
+    height: 2.9065rem;
+  }
+}
+
 .question {
   .classification {
     display: flex;
@@ -478,12 +492,13 @@ html {
 
     .question-list {
       .question-item {
-        padding: 0.2rem;
+        padding: .3rem 0.2rem;
         // background-color: pink;
 
         .question-title {
           // font-weight: bold;
           font-size: 0.4rem;
+          font-weight: bold;
           letter-spacing: .1em;
         }
 
@@ -497,15 +512,26 @@ html {
           justify-content: space-between;
           align-items: center;
 
-          a {
+          .left {
+            color: rgba(91, 132, 240, 1);
+
+            img,
+            span {
+              margin-left: -0.35rem;
+            }
+
+            span:first-of-type {
+              margin-right: 0.3rem;
+            }
+          }
+
+          a.right {
             background: var(--btn-bg);
             padding: 0.11rem .3rem;
             border-radius: 999rem;
             box-shadow: var(--btn-shadow);
 
             color: #fff;
-
-
 
             &:active {
               box-shadow: var(--btn-shadow-active);
