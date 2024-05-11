@@ -259,11 +259,11 @@ html body .iconfont:hover {
 .question .body,
 .apparel .body {
   padding: 0 0.2rem;
-  height: 9.5rem;
-  overflow-y: auto;
+  height: 10.9rem;
+  overflow-y: hidden;
 }
 .recommend-doctor .body {
-  height: 6rem;
+  height: 6.1rem;
 }
 .recommend-doctor .body ul {
   display: flex;
@@ -327,7 +327,7 @@ html body .iconfont:hover {
   height: 2.9065rem;
 }
 .question {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.3rem;
 }
 .question .classification {
   display: flex;
@@ -470,4 +470,20 @@ html body .iconfont:hover {
 }
 body::-webkit-scrollbar {
   width: 0;
+}
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }

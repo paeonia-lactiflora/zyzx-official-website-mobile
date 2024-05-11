@@ -213,69 +213,6 @@
             </div>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <div class="left">
-              <img src="/img/index/recommend-doctor/jyy.png" alt="">
-            </div>
-            <div class="right">
-              <h5 class="card-title">
-                <div class="name">江园园</div>
-                <div class="department">主任医师 | 妇科</div>
-              </h5>
-              <div class="secondary-title">
-                <img class="score" src="/img/index/recommend-doctor/stars.png"></img>
-                <div class="visit-time"><span>3600</span>次接诊</div>
-              </div>
-              <p class="speciality">擅长于中西医结合治疗不孕不育症，妇科内分泌
-                失调疾病，复发性流产，妇科炎性疾病...</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="left">
-              <img src="/img/index/recommend-doctor/jyy.png" alt="">
-            </div>
-            <div class="right">
-              <h5 class="card-title">
-                <div class="name">江园园</div>
-                <div class="department">主任医师 | 妇科</div>
-              </h5>
-              <div class="secondary-title">
-                <img class="score" src="/img/index/recommend-doctor/stars.png"></img>
-                <div class="visit-time"><span>3600</span>次接诊</div>
-              </div>
-              <p class="speciality">擅长于中西医结合治疗不孕不育症，妇科内分泌
-                失调疾病，复发性流产，妇科炎性疾病...</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="left">
-              <img src="/img/index/recommend-doctor/jyy.png" alt="">
-            </div>
-            <div class="right">
-              <h5 class="card-title">
-                <div class="name">江园园</div>
-                <div class="department">主任医师 | 妇科</div>
-              </h5>
-              <div class="secondary-title">
-                <img class="score" src="/img/index/recommend-doctor/stars.png"></img>
-                <div class="visit-time"><span>3600</span>次接诊</div>
-              </div>
-              <p class="speciality">擅长于中西医结合治疗不孕不育症，妇科内分泌
-                失调疾病，复发性流产，妇科炎性疾病...</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="left"></div>
-            <div class="right"></div>
-          </a>
-        </li>
       </ul>
     </div>
   </div>
@@ -394,6 +331,19 @@
   <script src="/js/flexible.js"></script>
   <script src="/js/common.js"></script>
   <script src="/js/index.js"></script>
+  <script src="/js/lenis.min.js"></script>
+
+  <script>
+    // lenis init
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  </script>
 </body>
 
 </html>

@@ -371,16 +371,17 @@ html {
 
   .body {
     padding: 0 .2rem;
-    height: 9.5rem;
+    height: 10.9rem;
 
-    overflow-y: auto;
+    // overflow-y: auto;
+    overflow-y: hidden;
   }
 }
 
 
 .recommend-doctor {
   .body {
-    height: 6rem;
+    height: 6.1rem;
 
     ul {
       display: flex;
@@ -474,8 +475,8 @@ html {
 
 
 .question {
-  margin-bottom: 1.2rem;
-  
+  margin-bottom: 1.3rem;
+
   .classification {
     display: flex;
     justify-content: space-between;
@@ -675,4 +676,27 @@ html {
 
 body::-webkit-scrollbar {
   width: 0;
+}
+
+
+// 滑动阻尼 lenis
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }

@@ -1,7 +1,7 @@
 // 当页面加载完成
-window.addEventListener('load', function () {
-	document.querySelector('.loader-container').style.display = 'none'
-})
+// window.addEventListener('load', function () {
+// 	document.querySelector('.loader-container').style.display = 'none'
+// })
 
 
 

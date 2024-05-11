@@ -65,6 +65,19 @@
 
   <script src="/js/flexible.js"></script>
   <script src="/js/common.js"></script>
+  <script src="/js/lenis.min.js"></script>
+
+  <script>
+    // lenis init
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  </script>
 </body>
 
 </html>
