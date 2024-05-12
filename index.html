@@ -24,10 +24,10 @@
     // 检测屏幕宽度并进行跳转
     function redirectToMobileOrDesktop() {
       // 获取屏幕宽度
-      var screenWidth = window.innerWidth || document.documentElement.clientWidth
+      const screenWidth = window.innerWidth || document.documentElement.clientWidth
 
       // 设置阈值来判断移动设备与桌面设备的界限，这里假设小于等于 768px 为移动设备
-      var threshold = 768
+      const threshold = 768
 
       // 如果屏幕宽度小于等于阈值，跳转至移动端网站
       if (screenWidth >= threshold) {
@@ -70,25 +70,25 @@
   <div class="tools">
     <ul class="row">
       <li class="tool-item znwz">
-        <a href="#" class="tool-link">
+        <a href="/html/todo.html" class="tool-link">
           <img src="/img/index/tool/znwz.png" alt="">
           <p>智能问诊</p>
         </a>
       </li>
       <li class="tool-item jkzx">
-        <a href="#" class="tool-link">
+        <a href="/html/todo.html" class="tool-link">
           <img src="/img/index/tool/jkzx.png" alt="">
           <p>健康咨询</p>
         </a>
       </li>
       <li class="tool-item znpf">
-        <a href="#" class="tool-link">
+        <a href="/html/todo.html" class="tool-link">
           <img src="/img/index/tool/znpf.png" alt="">
           <p>智能配方</p>
         </a>
       </li>
       <li class="tool-item znsb">
-        <a href="#" class="tool-link">
+        <a href="/html/todo.html" class="tool-link">
           <img src="/img/index/tool/znsb.png" alt="">
           <p>智能识别</p>
         </a>
@@ -96,31 +96,31 @@
     </ul>
     <ul class="row">
       <li class="tool-item bad yfjc">
-        <a href="#" class="tool-link">
+        <a href="/html/todo.html" class="tool-link">
           <img src="/img/index/tool/yfjc.png" alt="" class="">
           <p>药方检测</p>
         </a>
       </li>
       <li class="tool-item bad jkzc">
-        <a href="#" class="tool-link">
+        <a href="/html/todo.html" class="tool-link">
           <img src="/img/index/tool/jkzc.png" alt="" class="">
           <p>健康自测</p>
         </a>
       </li>
       <li class="tool-item bad xljk">
-        <a href="#" class="tool-link">
+        <a href="/html/todo.html" class="tool-link">
           <img src="/img/index/tool/xljk.png" alt="" class="">
           <p>健康自测</p>
         </a>
       </li>
       <li class="tool-item bad smzs">
-        <a href="#" class="tool-link">
+        <a href="/html/todo.html" class="tool-link">
           <img src="/img/index/tool/smzs.png" alt="" class="">
           <p>睡眠助手</p>
         </a>
       </li>
       <li class="tool-item bad jbdt">
-        <a href="#" class="tool-link">
+        <a href="/html/todo.html" class="tool-link">
           <img src="/img/index/tool/jbdt.png" alt="" class="">
           <p>疾病动态</p>
         </a>
@@ -136,7 +136,7 @@
   <div class="appointment">
     <ul class="row">
       <li>
-        <a href="#">
+        <a href="/html/todo.html">
           <p class="title">预约挂号</p>
           <p class="description">节约时间</p>
           <img src="/img/index/appointment/yygh-bg.png" alt="" id="yygh-bg" class="bg">
@@ -145,7 +145,7 @@
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="/html/todo.html">
           <p class="title">线下预约</p>
           <p class="description">精准治疗</p>
           <img src="/img/index/appointment/xxyy-bg.png" alt="" id="xxyy-bg" class="bg">
@@ -154,7 +154,7 @@
       </li>
       <img src="img/index/appointment//yygh-btn.png" alt="" class="btn">
       <li>
-        <a href="#">
+        <a href="/html/todo.html">
           <p class="title">专家讲解</p>
           <p class="description">知识拓宽</p>
           <img src="/img/index/appointment/zjjj-bg.png" alt="" class="bg">
@@ -170,13 +170,13 @@
   <div class="recommend-doctor">
     <div class="header">
       <p>推荐医生</p>
-      <a href="#" class="more">更多 <i class="iconfont icon-arrow-right"></i></a>
+      <a href="/html/todo.html" class="more">更多 <i class="iconfont icon-arrow-right"></i></a>
     </div>
 
     <div class="body">
       <ul>
         <li>
-          <a href="#">
+          <a href="/html/todo.html">
             <div class="left">
               <img src="/img/index/recommend-doctor/jyy.png" alt="">
             </div>
@@ -195,7 +195,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="/html/todo.html">
             <div class="left">
               <img src="/img/index/recommend-doctor/jyy.png" alt="">
             </div>
@@ -220,7 +220,7 @@
 
   <!-- 智能穿戴 -->
   <div class="apparel">
-    <a href="#">
+    <a href="/html/todo.html">
       <img src="/img/index/apparel/bg.png" alt="">
     </a>
   </div>
@@ -230,7 +230,7 @@
   <div class="question">
     <div class="header">
       <p>热门问题</p>
-      <a href="#" class="more">查看全部 <i class="iconfont icon-arrow-right"></i></a>
+      <a href="/html/todo.html" class="more">查看全部 <i class="iconfont icon-arrow-right"></i></a>
     </div>
 
     <div class="classification">
@@ -331,18 +331,7 @@
   <script src="/js/flexible.js"></script>
   <script src="/js/common.js"></script>
   <script src="/js/index.js"></script>
-  <script src="/js/lenis.min.js"></script>
 
-  <script>
-    // lenis init
-    const lenis = new Lenis()
-
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
   </script>
 </body>
 

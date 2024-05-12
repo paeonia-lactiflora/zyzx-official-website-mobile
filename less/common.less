@@ -588,6 +588,7 @@ html {
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 1000;
 
   display: flex;
   justify-content: space-around;
@@ -662,7 +663,7 @@ html {
       border-radius: inherit;
       background: currentColor;
 
-      animation: l6 1s infinite;
+      animation: l6 1s infinite ease;
     }
 
     @keyframes l6 {
@@ -676,27 +677,4 @@ html {
 
 body::-webkit-scrollbar {
   width: 0;
-}
-
-
-// 滑动阻尼 lenis
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
 }
