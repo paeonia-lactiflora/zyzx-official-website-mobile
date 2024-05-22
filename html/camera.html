@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>智能识别</title>
+
+
+	<!-- bootstrap.css -->
+	<link rel="stylesheet" href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap-reboot.css">
+
+	<!-- 字体图标 -->
+	<link rel="stylesheet" href="/iconfont/iconfont.css">
+
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/camera.css">
+</head>
+
+<body>
+	<div id="box">
+		<video id="media" autoplay></video>
+	</div>
+
+
+	<script>
+		const media = document.getElementById('media')	// video元素
+
+		navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: 'environment' } }, audio: false }).then(stream => {
+			// 将视频流设置为video元素的源
+			media.srcObject = stream
+			// 低版本浏览器
+			// media.src = window.URL.createObjectURL(stream)
+			media.play()
+		})
+	</script>
+</body>
+
+</html>
