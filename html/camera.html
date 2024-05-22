@@ -27,6 +27,7 @@
 	<script>
 		const media = document.getElementById('media')	// video元素
 
+		// navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: 'environment' } }, audio: false }).then(stream => {
 		navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: 'environment' } }, audio: false }).then(stream => {
 			// 将视频流设置为video元素的源
 			media.srcObject = stream
