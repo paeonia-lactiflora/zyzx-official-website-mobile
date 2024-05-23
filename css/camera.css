@@ -13,7 +13,7 @@ video {
   left: 0.8667rem;
 }
 #backBtn i {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #fff;
 }
 .line {
@@ -36,7 +36,7 @@ video {
 }
 .text {
   position: absolute;
-  bottom: 3rem;
+  bottom: 3.5rem;
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.9rem;
@@ -53,7 +53,7 @@ label[for="file"] {
   position: absolute;
   bottom: 1.5rem;
   right: 2.5rem;
-  color: #000;
+  color: #fff;
 }
 label[for="file"] i {
   font-size: 3rem;
