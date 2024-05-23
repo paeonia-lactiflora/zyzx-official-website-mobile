@@ -15,9 +15,17 @@ if (document.querySelector('.loader-container')) { // 5个 tabBar 页面
 			if (e.target.classList.contains('loader-container') || e.target.classList.contains('tabBar')) return
 
 			console.log('body 被点击')
-			
+
 			// 跳转至todo.html
 			window.location.href = '/html/todo.html'
 		})
 	}
+}
+
+// 返回上一级按钮
+const backBtn = document.querySelector('#backBtn')
+if (backBtn) {
+	backBtn.addEventListener('click', function () {
+		window.history.back()
+	})
 }

@@ -7,3 +7,12 @@ video {
   left: 0;
   z-index: -1;
 }
+#backBtn {
+  position: absolute;
+  top: 0.5667rem;
+  left: 0.6667rem;
+}
+#backBtn i {
+  font-size: 1.3rem;
+  color: #8f8e8e;
+}
