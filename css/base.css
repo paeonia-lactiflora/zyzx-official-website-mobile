@@ -4,6 +4,38 @@
     padding: 0;
     /* css3盒子模型 */
     box-sizing: border-box;
+
+    transition: all var(--transition-duration);
+
+    caret-color: var(--main-color) !important;
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+html {
+    --main-color: #007AFF;
+    --main-color-rgb: 20, 70, 204;
+
+    --body-color: var(--bs-body-color);
+
+
+    --bs-shadow: 0 .2133rem .4267rem rgba(var(--bs-body-color-rgb), 0.15);
+    --bs-shadow-active: 0 .1067rem .2133rem rgba(var(--bs-body-color-rgb), 0.15);
+    --xiaomi-shadow: .1rem .1rem .1rem rgba(0, 0, 0, .2);
+    --xiaomi-shadow-active: 0 .2667rem 1.0667rem rgba(0, 0, 0, .2);
+
+    --btn-bg: linear-gradient(225deg, #4975EC 0%, #97B3FF 100%);
+    --btn-shadow: 0px .0475rem .404rem #5680EF;
+    --btn-shadow-active: 0px .0275rem .204rem #5680EF;
+
+
+    --transition-duration: .15s;
+    --bs-nice-shadow: 0 0 0 .0208rem rgba(var(--main-color-rgb), .25);
+
+    overflow-x: hidden !important;
 }
 
 /* em 和 i 斜体的文字不倾斜 */

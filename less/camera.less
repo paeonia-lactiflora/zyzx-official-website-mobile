@@ -20,9 +20,33 @@ video {
     }
 }
 
+// 扫描线, 主题色阴影, 在屏幕中心从上到下扫描, 有动画
+.line {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 999;
+
+    transform: translateX(-50%);
+
+    width: 75%;
+    height: .1rem;
+    border-radius: 50rem;
+
+    background-color: var(--main-color);
+    animation: scan 3s infinite ease;
+
+    @keyframes scan {
+        to {
+            top: 70%;
+            opacity: 0;
+        }
+    }
+}
+
 .text {
     position: absolute;
-    bottom: 2rem;
+    bottom: 3rem;
     left: 50%;
 
     transform: translateX(-50%);
@@ -30,7 +54,7 @@ video {
     font-size: .9rem;
     color: rgb(143, 142, 142);
     text-wrap: nowrap;
-    
+
     p {
         text-align: center;
     }
