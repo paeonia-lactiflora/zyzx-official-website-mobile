@@ -9,10 +9,10 @@ video {
 }
 #backBtn {
   position: absolute;
-  top: 0.5667rem;
-  left: 0.6667rem;
+  top: 0.6667rem;
+  left: 0.8667rem;
 }
 #backBtn i {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #8f8e8e;
 }
