@@ -13,6 +13,18 @@ video {
   left: 0.8667rem;
 }
 #backBtn i {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #8f8e8e;
+}
+.text {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: #8f8e8e;
+  text-wrap: nowrap;
+}
+.text p {
+  text-align: center;
 }
