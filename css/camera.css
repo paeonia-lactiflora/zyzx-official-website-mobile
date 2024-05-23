@@ -14,7 +14,7 @@ video {
 }
 #backBtn i {
   font-size: 1.8rem;
-  color: #f5f5f5;
+  color: #fff;
 }
 .line {
   position: absolute;
@@ -40,7 +40,7 @@ video {
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.9rem;
-  color: #8f8e8e;
+  color: #fff;
   text-wrap: nowrap;
 }
 .text p {
