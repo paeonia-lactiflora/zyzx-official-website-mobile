@@ -51,10 +51,10 @@ input[type="file"] {
 }
 label[for="file"] {
   position: absolute;
-  bottom: 1.2rem;
-  right: 2rem;
-  color: #fff;
+  bottom: 1.5rem;
+  right: 2.5rem;
+  color: #000;
 }
 label[for="file"] i {
-  font-size: 2.3rem;
+  font-size: 3rem;
 }
