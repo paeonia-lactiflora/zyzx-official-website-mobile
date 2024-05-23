@@ -46,3 +46,15 @@ video {
 .text p {
   text-align: center;
 }
+input[type="file"] {
+  display: none;
+}
+label[for="file"] {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 2rem;
+  color: #fff;
+}
+label[for="file"] i {
+  font-size: 2.3rem;
+}
