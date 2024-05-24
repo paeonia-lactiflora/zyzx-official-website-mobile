@@ -6,7 +6,7 @@ if (document.querySelector('.loader-container')) { // 5个 tabBar 页面
 		setTimeout(() => {
 			console.log('延迟隐藏 loading 动画')
 			document.querySelector('.loader-container').style.display = 'none'
-		}, 1000)
+		}, 800)
 	})
 
 	// 除index.html以外的4个图片页面的body

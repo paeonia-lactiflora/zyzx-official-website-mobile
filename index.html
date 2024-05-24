@@ -9,6 +9,9 @@
   <!-- bootstrap.css -->
   <link rel="stylesheet" href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap-reboot.css">
 
+  <!-- driver.css -->
+  <link href="https://cdn.bootcdn.net/ajax/libs/driver.js/0.9.8/driver.min.css" rel="stylesheet">
+
   <!-- 字体图标 -->
   <link rel="stylesheet" href="/iconfont/iconfont.css">
 
@@ -332,6 +335,45 @@
   <script src="/js/common.js"></script>
   <script src="/js/index.js"></script>
 
+  <script src="https://cdn.bootcdn.net/ajax/libs/driver.js/0.9.8/driver.min.js"></script>
+
+  <script>
+    const driver = new Driver({
+      nextBtnText: '下一个', // Next button text for this step 下一步按钮的文字
+      prevBtnText: '上一个', // Previous button text for this step 上一步按钮文字
+      doneBtnText: '完成', // Text on the final button 完成按钮的文字
+    })
+    // 单个元素
+    // driver.highlight({
+    //   element: '.tool-item.znsb',
+    //   popover: {
+    //     title: '智能识别',
+    //     description: 'AI中草药智能识别',
+    //     position: 'left'
+    //   }
+    // });
+
+    // 多个元素
+    driver.defineSteps([
+      {
+        element: '.tool-item.znwz',
+        popover: {
+          title: '特色功能: 智能问诊',
+          description: 'Body of the popover',
+          position: 'bottom'
+        }
+      },
+      {
+        element: '.tool-item.znsb',
+        popover: {
+          title: '特色功能: 智能识别',
+          description: 'AI中草药智能识别',
+          position: 'bottom-right'
+        }
+      },
+    ])
+    // Start the introduction
+    driver.start();
   </script>
 </body>
 
